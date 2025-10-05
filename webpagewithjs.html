@@ -1,18 +1,41 @@
+
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <title>Salman's Light Switch Page</title>
+    <style>
+      body {
+        background-color: lightblue;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      h2 {
+        color: darkblue;
+      }
+      button {
+        margin: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+        border-radius: 6px;
+        border: none;
+        background-color: navy;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Salman's Interactive Webpage</h2>
+    <p>This page uses JavaScript to turn the light on and off. Click a button below to try it!</p>
 
-<h2>Simple Web Page with HTML and JavaScript</h2>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn On Light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:120px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn Off Light</button>
 
-<p>JavaScript can change HTML attribute values.</p>
-
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
-</body>
+    <p>Created by <b>Salman Mahamed</b></p>
+  </body>
 </html>
+
